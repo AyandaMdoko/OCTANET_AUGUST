@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<body>
+
+<section class="flex">
+    <div class="emblem">
+        <img class="logo" src="img/logo.jpeg" alt="logo">
+        <h1 class="title">HMS</h1>
+    </div>
+    
+    <div class="hamburger-menu" onclick="toggleMenu()">
+        <i class="ri-menu-line"></i>
+    </div>
+    
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about_us">About Us</a></li>
+            <li><a href="#contact_us">Contact Us</a></li>
+            <li><a href="#logins">Logins</a></li>  
+        </ul>
+    </div>
+    
+    <button class="appointment">Book an Appointment</button>
+</section>
+
+<script>
+    function toggleMenu() {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('active');
+    }
+</script>
+
+<section class="slider-detail">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="img/Hospital.jpg" alt="First slide">
+                <div class="carousel-cover"></div>
+                <div class="carousel-caption vdg-cur d-none d-md-block">
+                    <h5 class="animated bounceInDown">Hospital Management System</h5>
+                </div>
+            </div>
+            
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/holway.webp" alt="Second slide">
+                <div class="carousel-cover"></div>
+                <div class="carousel-caption vdg-cur d-none d-md-block">
+                    <h5 class="animated bounceInDown">Hospital Management System</h5>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/Nursing Shortage JV TT 16.jpg" alt="Third slide">
+                <div class="carousel-cover"></div>
+                <div class="carousel-caption vdg-cur d-none d-md-block">
+                    <h5 class="animated bounceInDown">Hospital Management System</h5>
+                </div>
+            </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+</br>
+</br>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+ <!--  ************************* About Us Starts Here ************************** -->
+        
+ <section id="about_us" class="about-us">
+    
+    <div class="row no-margin">
+        <div class="col-sm-6 image-bg no-padding">
+            
+        </div>
+        <div class="col-sm-6 abut-yoiu">
+            <h2>About Our System</h2>
+            <P>The Hospital Management System (HMS) is designed for Any Hospital to replace their existing manual, paper based system.
+                 The new system is to control the following information; patient information, room availability, staff and operating room schedules, and patient invoices.
+                 These services are to be provided in an efficient, cost effective manner, with the goal of reducing the time and resources currently required for such tasks.</P>
+            <p>A significant part of the operation of any hospital involves the acquisition, management and timely retrieval of great volumes of information. 
+                This information typically involves; patient personal information and medical history, staff information, room and ward scheduling, staff scheduling, operating theater scheduling and various facilities waiting lists. 
+                All of this information must be managed in an efficient and cost wise fashion so that an institution's resources may be effectively utilized HMS will automate the management of the hospital making it more efficient and error free. 
+                It aims at standardizing data, consolidating data ensuring data integrity and reducing inconsistencies. </p>
+
+        </div>
+    </div>
+</section>   
+</br>
+</br> 
+
+<!-- ################# How the system works Starts Here#######################--->
+ <section class="functions">
+    <h3>How does the system work to support your practice prior, during & post consultations:</h3>
+    <div class="sachedule-appointment">
+        <div class="appointment-img">
+            <img src="img\appointment-scheduling-solution.png" alt="schedule appointment">
+        </div>
+        <div class="appointment-sheduling">
+           <u style="color: black;"><h3 class="function-heading-title">Schedul appointment</h3></u>
+            <p style="text-align: center;">
+                <b>Prior to consultation</b>
+            </p>
+            <ul>
+                <li>Online calender</li>
+                <li>Online booking platform</li>
+                <li>Automated benefits checks</li>
+                <li>Automated SMS/email reminders</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="check-in">
+        <div class="check-in-img">
+            <img src="img\Check-in.png" alt="check in">
+        </div>
+        <div class="check-in-patients">
+            <u style="color: black;"><h3 class="function-heading-title">Check-in patients</h3></u>
+            <p style="text-align: center;">
+                <b >Prior to consultation</b>
+            </p>
+            <ul>
+                <li>Effortless management of your patients</li>
+                <li>Family check to verify new patients and add them to your database</li>   
+            </ul>
+        </div>
+    </div>
+
+    <div class="patient-digital-file">
+        <div class="digital-file-img">
+            <img src="img\Digital-access.png" alt="file access">
+        </div>
+        <div class="Access-patient-digital-file">
+            <u style="color: black;"><h3 class="function-heading-title">Access patient digital file</h3></u>
+            <p style="text-align: center;">
+                <b>During consultation:</b>
+            </p>
+            <ul>
+                <li>View the patient’s executive summary (clinical information, allergies & chronic conditions).</li>
+                <li>View the patient’s previous visits from the patient timeline (clinical notes, diagnoses, procedures & medication).</li>  
+            </ul>
+        </div>
+    </div>
+
+    <div class="consult">
+        <div class="consult-img">
+            <img src="img\Capture.png" alt="capture consult">
+        </div>
+        <div class="capture-consult">
+            <u style="color: black;"><h3 class="function-heading-title">Capture consult</h3></u>
+            <p style="text-align: center;">
+                <b>During consultation:</b>
+            </p>
+            <p>
+                Capture patient symptoms & examination notes quickly using a stylus, clinical note templates or free text box. 
+                Should patients not be able to meet face-to-face, engage with patients digitally via Telehealth consultations.
+            </p>
+        </div>
+    </div>
+
+    <div class="diagnoses">
+        <div class="diagnoses-img">
+            <img src="img\Diagnose.jpg" alt="diagnose">
+        </div>
+        <div class="diagnose-patient">
+            <u style="color: black;"><h3 class="function-heading-title">Diagnose</h3></u>
+        <p style="text-align: center;">
+            <b>During consultation:</b>
+        </p>
+        <p>
+            Capture the diagnosis & the system will propose procedures, consumables & medication – you simply confirm them.
+        </p>
+        </div>
+    </div>
+
+    <div class="Smart-medicine-selection">
+        <div class="medicine-img">
+            <img src="img\Select-medicine.png" alt="select medicine">
+        </div>
+        <div class="medicine-selection">
+            <u style="color: black;"><h3 class="function-heading-title">Smart medicine selection</h3></u>
+        <p style="text-align: center;">
+            <b>During consultation:</b>
+        </p>
+        <ul>
+            <li>Quick identification with generic / alternative options</li>
+            <li>Quick access to pharmaceutical prescribing reference
+                guide</li>
+        </ul>
+        </div>
+    </div>
+ </section>
+
+<!-- ################# Our Departments Starts Here#######################--->
+
+
+<section id="services" class="key-features department">
+    <div class="container">
+        <div class="inner-title">
+
+            <h2>Key Features</h2>
+            <p>Take a look at some of our key features</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                    <i class="fas fa-heartbeat"></i>
+                    <h5>Cardiology</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                    <i class="fas fa-ribbon"></i>
+                    <h5>Orthopaedic</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                   <i class="fab fa-monero"></i>
+                    <h5>Neurologist</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                    <i class="fas fa-capsules"></i>
+                    <h5>Pharma Pipeline</h5>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                    <i class="fas fa-prescription-bottle-alt"></i>
+                    <h5>Pharma Team</h5>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-md-6">
+                <div class="single-key">
+                    <i class="far fa-thumbs-up"></i>
+                    <h5>High Quality treatments</h5>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+   <!--  ************************* Contact Us Starts Here ************************** -->
+    
+   <section id="contact_us" class="contact-us-single">
+    <div class="container">
+        <div class="form-container">
+            <form method="post">
+                <h2>Contact Form</h2>
+                <div class="form-group">
+                    <label for="fullname">Enter Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter Name" class="form-control input-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailid">Email Address:</label>
+                    <input type="email" id="emailid" name="emailid" placeholder="Enter Email Address" class="form-control input-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobileno">Mobile Number:</label>
+                    <input type="text" id="mobileno" name="mobileno" placeholder="Enter Mobile Number" class="form-control input-sm" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Enter Message:</label>
+                    <textarea id="description" rows="5" placeholder="Enter Your Message" class="form-control input-sm" name="description" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-sm" type="submit" name="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+ <!-- ################# Footer Starts Here#######################--->
+
+
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>Useful Links</h2>
+                <ul class="list-unstyled link-list">
+                    <li><a ui-sref="about" href="#about_us">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="portfolio" href="#services">Services</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="products" href="#logins">Logins</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="contact" href="#contact_us">Contact us</a><i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <h2>Get In touch</h2>
+                <address class="md-margin-bottom-40">
+                    <label>D-204, Hole Town South West, Maselwane St, Gauteng</label><br>
+                    <label>Phone: 1122334455</label><br>
+                    <label>Email: info@gmail.com</label><br>
+                    <label>Timing: 9 am To 8 Pm</label>
+                </address>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 icons">
+                <i class="ri-twitter-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-youtube-fill"></i>
+                <i class="ri-linkedin-fill"></i>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <div class="copy">
+            <div class="container">
+         Hospital Management System
+                
+     
+            </div>
+
+        </div>
+
+</body>
+</html>

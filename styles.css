@@ -1,0 +1,645 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: limegreen;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.emblem {
+    display: flex;
+    align-items: center;
+}
+
+.emblem .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 24px;
+    margin: 0;
+}
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+.navbar ul li a:hover{
+    color: #3f26ba;
+}
+
+.appointment {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding: 10px;
+        background-color: #f8f8f8;
+        border-top: 1px solid #e0e0e0;
+    }
+
+    .hamburger-menu {
+      display: block;
+      position: absolute;
+      bottom:86%;
+      right: 20px;
+
+    }
+
+    .appointment {
+        margin-top: 10px;
+        align-self: flex-start;
+    }
+    .appointment{
+      display: block;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+}
+
+
+/* ===================================== Slide Style CSS ================================== */
+.slider-detail {
+    position: relative;
+    max-width: 100%;
+    width:100%;
+    overflow: hidden;
+    padding-top:0px;
+}
+
+.carousel-item {
+    position: relative;
+}
+
+.slider-detail .carousel-cover {
+    background-color: rgba(0, 173, 162, 0.53);
+    position: absolute;
+    left: 0px;
+    width: 40%;
+    top: 50px;
+    height: 100%;
+    background-color: rgba(0, 173, 162, 0.53);
+    position: absolute;
+    left: -30%;
+    width: 80%;
+    top: -170px;
+    height: 140%;
+    transform: rotate(15deg); }
+    @media screen and (max-width: 1086px) {
+        .slider-detail .carousel-cover {
+          top: -131px;
+          left: -24%;
+          transform: rotate(12deg); } }
+      @media screen and (max-width: 999px) {
+        .slider-detail .carousel-cover {
+          transform: rotate(7deg);
+          top: -100px; } }
+      @media screen and (max-width: 767px) {
+        .slider-detail .carousel-cover {
+          display: none; } }
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;;
+    color: white;
+    text-align: left;
+    top: 70px;
+    left: 10%;
+    max-width: 40%;
+}
+
+.carousel-caption h5 {
+    margin: 0;
+    font-size: 40px;
+    animation: bounceInDown 1s;
+}
+
+/* BounceInDown animation */
+@keyframes bounceInDown {
+    0%, 60%, 75%, 90%, 100% {
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: translateY(-3000px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(25px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    90% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Adjustments for Bootstrap carousel */
+.carousel-indicators li {
+    background-color: #333;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333;
+    border-radius: 50%;
+}
+
+/* Responsive styles for slider */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 18px;
+    }
+}
+
+/*====================================== About Us Style ====================================*/
+
+.about-us {
+    background-color: #f9f9f9;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.image-bg {
+    background: url(img/hosp-adm.jpg) no-repeat center center/cover;
+    height: 110%;
+    min-height: 480px;
+}
+
+.abut-yoiu {
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.abut-yoiu h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: limegreen;
+}
+
+.abut-yoiu p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .image-bg {
+        min-height: 200px;
+    }
+
+    .abut-yoiu {
+        padding: 20px;
+    }
+
+    .abut-yoiu h3 {
+        font-size: 24px;
+    }
+
+    .abut-yoiu p {
+        font-size: 14px;
+    }
+
+}
+
+/*====================================== How it works Style ====================================*/
+
+
+.functions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.functions > div {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.functions img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.function-heading-title {
+    font-size: 25px;
+    margin: 20px 0 10px;
+    color: limegreen;
+    text-align: center;
+}
+h3{
+    color: #007bff;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+
+}
+
+ul {
+    list-style-type: disc; /* Adds markers to list items */
+    padding-left: 20px; /* Indents the list */
+}
+
+ul li {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+b {
+    color: #333;
+    text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .functions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .functions > div {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .function-heading-title {
+        font-size: 18px;
+    }
+
+    p, ul li {
+        font-size: 13px;
+    }
+}
+
+
+/* ===================================== Key Features CSS ================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.inner-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.inner-title h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: limegreen;
+}
+
+.inner-title p {
+    font-size: 16px;
+    color: #666;
+}
+
+.key-features .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.single-key {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-key i {
+    font-size: 50px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.single-key h5 {
+    font-size: 20px;
+    margin: 10px 0;
+    color:limegreen ;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .inner-title h2 {
+        font-size: 28px;
+    }
+
+    .inner-title p {
+        font-size: 14px;
+    }
+
+    .single-key {
+        padding: 15px;
+    }
+
+    .single-key i {
+        font-size: 40px;
+    }
+
+    .single-key h5 {
+        font-size: 18px;
+    }
+}
+
+/* ===================================== contact us CSS ================================== */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.contact-us-single {
+    padding: 50px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-single h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: rgb(246, 243, 243);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #80bdff;
+    box-shadow: 0 0 5px rgba(0,123,255,.25);
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-us-single {
+        padding: 30px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
+
+/* ===================================== Fooer CSS ================================== */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.footer {
+    padding: 30px 50px;
+    background-color: #444;
+    color: #FFF;
+}
+
+.footer h2 {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.footer p {
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.footer .link-list li {
+    padding: 10px;
+    border-bottom: 1px solid #6C6C6C;
+}
+
+.footer .link-list li a {
+    color: #FFF;
+}
+
+.footer .link-list li i {
+    float: right;
+}
+
+.footer .map-img {
+    font-weight: 600;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.footer address label {
+    display: block;
+    color: #FFF;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer .icons i {
+    font-size: 24px;
+    color: white;
+}
+
+.footer .icons i:hover {
+    color: #3f26ba;
+}
+
+.copy {
+    padding: 20px;
+    background-color: #2E2E2E;
+    color: #FFF;
+}
+
+.copy a {
+    color: #FFF;
+}
+
+.copy span {
+    float: right;
+}
+
+.copy span i {
+    margin-right: 20px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 940px) {
+    .footer {
+        padding: 50px 10px;
+    }
+
+    .footer .map-img {
+        padding-left: 0;
+    }
+}
+
+.kf-2 {
+    background-color: #FCFCFC;
+    padding: 80px 50px;
+}
+
+@media screen and (max-width: 940px) {
+    .kf-2 {
+        padding: 50px 10px;
+    }
+}
+
+.kf-2 .single-key {
+    box-shadow: 0 2px 3px 0 rgba(218, 218, 253, 0.35), 0 0px 3px 0 rgba(206, 206, 238, 0.35);
+}
